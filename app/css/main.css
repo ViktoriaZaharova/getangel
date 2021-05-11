@@ -1790,20 +1790,66 @@ footer {
     margin: 30px auto;
     text-align: center; }
 
+.btn-burger {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: #0294c9;
+  padding: 12px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 15px 0 0; }
+  .btn-burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .logo-text {
+    display: none; } }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /**/ }
-
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /**/ }
+@media only screen and (max-width: 830px) {
+  header .whatsapp-links, header .schedule {
+    display: none; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 10px 0; }
+    header .header-box__text {
+      display: none; }
+    header .logo {
+      max-width: 123px; }
+  .header-box__icon {
+    margin: 0;
+    background: #000;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    padding: 12px;
+    fill: #fff; }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .wrapper {
+    padding: 61px 0 0; } }
+
 @media only screen and (max-width: 480px) {
   /**/ }
 
