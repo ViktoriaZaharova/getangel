@@ -1433,9 +1433,6 @@ main {
   .question .subtitle {
     margin: 19px auto 49px; }
   .question .row-wrapper {
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
@@ -1502,9 +1499,6 @@ main {
   line-height: 1.76;
   letter-spacing: 0.68px;
   padding: 37px 42px 35px 67px;
-  position: absolute;
-  left: 0;
-  top: calc(100% - 10px);
   width: 100%;
   background: #fff;
   border-radius: 0 0 10px 10px; }
