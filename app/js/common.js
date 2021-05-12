@@ -19,15 +19,13 @@ function accordeon() {
 
 accordeon();
 
-
 $(window).on('load resize', function() {
+    var checkWidth = $(window).width();
     if ($(window).width() < 576) {
         $('.product-slider:not(.slick-initialized)').slick({
             dots: true,
-            infinite: true,
             speed: 100,
             slidesToShow: 1,
-            arrows: true,
             prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-left"></use></svg></button>',
             nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-right"></use></svg></button>'
         });
@@ -36,14 +34,38 @@ $(window).on('load resize', function() {
     }
 });
 
+
 // tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
     $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 
-    $(".product-slider").slick('reinit');
+    $(".tabs__content.active .product-slider").slick('setPosition');
 });
+
+
+$('.box-dots').on('click', function(e){
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parent().find('ul li');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Скрыть');
+
+        content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Показать ещё');
+
+        content.slice(6).slideUp();
+    }
+});
+
 
 // модальные окна (несколько)
 $(function () {

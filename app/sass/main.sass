@@ -162,9 +162,9 @@ label
   position: relative
   display: flex
   flex-wrap: wrap
-  max-width: 1200px
+  max-width: 1220px
   width: 100%
-  padding: 0 15px
+  padding: 0 25px
 
 
 .color-accent
@@ -1581,6 +1581,29 @@ footer
 .title-mobile
   display: none
   width: 100%
+
+.slick-dots
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  bottom: 0
+  li
+    cursor: pointer
+    margin: 0 15px 0 0
+    width: 16px
+    height: 16px
+    border: solid 1px #0294c9
+      radius: 50%
+    button
+      display: none
+  .slick-active
+    background: #0294c9
+
+.responsive-wrapper
+  overflow-x: auto
+  flex-wrap: nowrap
 
 @import "modal"
 @import "media"

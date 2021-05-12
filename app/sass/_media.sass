@@ -266,7 +266,29 @@
     border-radius: 0
     overflow: visible
 
+  .certificates-box
+    max-width: 212px
+    min-width: 212px
+    margin: 0 55px 0 0
+    h3
+      margin: 0 0 30px
+      line-height: 1.55
+      letter-spacing: 0.8px
+    p
+      font-size: 16px
 
+  .certificates-box__img
+    max-width: 203px
+    height: 286px
+    margin: 0 0 30px
+
+  .certificates
+    padding: 49px 0 69px
+    h2
+      margin: 0 0 23px
+
+  .question
+    padding: 0
 
 @media only screen and (max-width: 830px)
   header
@@ -317,6 +339,8 @@
 
   .product-card__img
     height: 280px
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 768px)
@@ -582,6 +606,71 @@
     box-shadow: none
     padding: 10px
 
+  .tabs__caption
+    border-bottom: 2px solid rgba(#100f0f, .08)
+    li
+      background: #fff
+      box-shadow: none
+      padding: 12px 0
+      justify-content: flex-start
+      &:before
+        height: 2px
+        bottom: -2px
+        top: auto
+        width: 99px
+        left: 0
+        transform: none
+        border: none
+    .active
+      background: #fff
+      color: rgba(36, 33, 33, 0.89)
+      &:before
+        background: #0294c9
+
+
+  .tab-icon
+    display: none
+
+  .catalog
+    padding: 0
+
+  .product-card
+    box-shadow: none
+    width: 100%
+    
+  .reviews
+    h2
+      text-align: left
+
+  .product-slider
+    display: block
+    flex-wrap: nowrap
+
+  .product-card__img
+    height: 178px
+
+  .question
+    padding: 62px 0 0
+
+  .product-slider
+    .slick-arrow
+      top: 60px
+      transform: none
+    .slick-prev
+      left: -20px
+    .slick-next
+      right: -20px
+
+  .slick-prev
+    left: 0
+
+  .slick-next
+    right: 0
+
+  .map-wrapper
+    padding: 10px
+
+
 @media only screen and (max-width: 480px)
   .owner
     .title-mobile
@@ -603,4 +692,7 @@
 
   .reviews-box__video
     max-width: 290px
+
+  .tabs__caption li
+    font-size: 12px
 
