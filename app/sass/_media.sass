@@ -290,6 +290,9 @@
   .question
     padding: 0
 
+  .panel_heading
+    padding: 20px 10px
+
 @media only screen and (max-width: 830px)
   header
     .whatsapp-links, .schedule
@@ -479,6 +482,40 @@
 
   .map-wrapper
     height: 282px
+
+  .panel_heading
+    padding: 20px 0
+    border:
+      top: solid 1px rgba(#242121, .21)
+      bottom: solid 1px rgba(#242121, .21)
+      radius: 0
+    color: #141515
+    font-size: 16px
+
+  .block_hover
+    padding: 10px
+
+  .panel_heading-icon
+    order: -1
+    background: transparent
+    padding: 0
+    border-radius: 0
+    width: 20px
+    height: 20px
+    min-width: 20px
+    margin: 0 16px 0 0
+    box-shadow: none
+    &:before, &:after
+      background: #18191a
+    &:before
+      width: 100%
+    &:after
+      height: 100%
+
+  .panel_heading .block_title
+    justify-content: flex-start
+    h3
+      max-width: none
 
 @media only screen and (max-width: 576px)
   header
@@ -670,6 +707,22 @@
   .map-wrapper
     padding: 10px
 
+  .panel_heading
+    width: 100%
+    display: none
+    &:nth-child(-n+4)
+      display: block
+
+  .question
+    .subtitle
+      display: none
+    h2
+      margin: 0 auto 44px
+
+  .btn-load
+    display: flex
+    margin: 18px auto 0
+    max-width: 320px
 
 @media only screen and (max-width: 480px)
   .owner

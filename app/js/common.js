@@ -1,7 +1,7 @@
 $('.reviews-slider').slick({
     slidesToSow: 1,
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-right"></use></svg></button>'
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
 });
 
 // accordeon
@@ -20,14 +20,13 @@ function accordeon() {
 accordeon();
 
 $(window).on('load resize', function() {
-    var checkWidth = $(window).width();
     if ($(window).width() < 576) {
         $('.product-slider:not(.slick-initialized)').slick({
             dots: true,
             speed: 100,
             slidesToShow: 1,
-            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-left"></use></svg></button>',
-            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-right"></use></svg></button>'
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
         });
     } else {
         $(".product-slider.slick-initialized").slick("unslick");
@@ -45,12 +44,12 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 });
 
 
-$('.box-dots').on('click', function(e){
+$('.btn-load').on('click', function(e){
     e.preventDefault();
 
     var
         $this = $(this),
-        content = $(this).parent().find('ul li');
+        content = $(this).parents().find('.panel_heading');
 
 
     if(!$this.hasClass('trigger')){
@@ -60,9 +59,9 @@ $('.box-dots').on('click', function(e){
         content.slideDown();
     } else {
         $this.removeClass('trigger');
-        $this.html('Показать ещё');
+        $this.html('Посмотреть все вопросы');
 
-        content.slice(6).slideUp();
+        content.slice(4).slideUp();
     }
 });
 

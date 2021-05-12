@@ -1522,6 +1522,9 @@ main {
     .block_hover p:last-child {
       margin: 0; }
 
+.btn-load {
+  display: none; }
+
 .certificates {
   padding: 90px 0;
   background: #fff; }
@@ -2098,7 +2101,9 @@ footer {
     .certificates h2 {
       margin: 0 0 23px; }
   .question {
-    padding: 0; } }
+    padding: 0; }
+  .panel_heading {
+    padding: 20px 10px; } }
 
 @media only screen and (max-width: 830px) {
   header .whatsapp-links, header .schedule {
@@ -2271,7 +2276,41 @@ footer {
       margin: 0 0 42px;
       text-align: left; }
   .map-wrapper {
-    height: 282px; } }
+    height: 282px; }
+  .panel_heading {
+    padding: 20px 0;
+    border-top: solid 1px rgba(36, 33, 33, 0.21);
+    border-bottom: solid 1px rgba(36, 33, 33, 0.21);
+    border-radius: 0;
+    color: #141515;
+    font-size: 16px; }
+  .block_hover {
+    padding: 10px; }
+  .panel_heading-icon {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin: 0 16px 0 0;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .panel_heading-icon:before, .panel_heading-icon:after {
+      background: #18191a; }
+    .panel_heading-icon:before {
+      width: 100%; }
+    .panel_heading-icon:after {
+      height: 100%; }
+  .panel_heading .block_title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .panel_heading .block_title h3 {
+      max-width: none; } }
 
 @media only screen and (max-width: 576px) {
   header {
@@ -2429,7 +2468,22 @@ footer {
   .slick-next {
     right: 0; }
   .map-wrapper {
-    padding: 10px; } }
+    padding: 10px; }
+  .panel_heading {
+    width: 100%;
+    display: none; }
+    .panel_heading:nth-child(-n+4) {
+      display: block; }
+  .question .subtitle {
+    display: none; }
+  .question h2 {
+    margin: 0 auto 44px; }
+  .btn-load {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 18px auto 0;
+    max-width: 320px; } }
 
 @media only screen and (max-width: 480px) {
   .owner .title-mobile {
