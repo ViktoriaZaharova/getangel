@@ -800,7 +800,7 @@ main {
 
 .owner-box {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: -220px;
   bottom: -100px;
   max-width: 698px; }
@@ -811,7 +811,7 @@ main {
   padding: 38px 52px;
   bottom: 40px;
   left: -60px;
-  z-index: 2;
+  z-index: 3;
   font-size: 20px; }
   .owner-name:before {
     content: '';
@@ -830,7 +830,7 @@ main {
 
 .owner-position {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: -20px;
   bottom: -40px;
   color: #fff;

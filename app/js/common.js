@@ -19,7 +19,7 @@ function accordeon() {
 
 accordeon();
 
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 768) {
         $('.additionally-slider:not(.slick-initialized)').slick({
             dots: true,
@@ -58,7 +58,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 });
 
 
-$('.btn-load').on('click', function(e){
+$('.btn-load').on('click', function (e) {
     e.preventDefault();
 
     var
@@ -66,7 +66,7 @@ $('.btn-load').on('click', function(e){
         content = $(this).parents().find('.panel_heading');
 
 
-    if(!$this.hasClass('trigger')){
+    if (!$this.hasClass('trigger')) {
         $this.addClass('trigger');
         $this.html('Скрыть');
 
@@ -87,7 +87,7 @@ $(function () {
         close = $('.modal__close, .overlay'),
         modal = $('.modal__div');
 
-    open_modal.on('click',function (event) {
+    open_modal.on('click', function (event) {
         event.preventDefault();
 
         modal.css('display', 'none').animate({
@@ -124,7 +124,7 @@ $(function () {
 
 // mobile menu
 $('.btn-burger').on('click', function () {
-   $('.mobile-menu').fadeToggle();
+    $('.mobile-menu').fadeToggle();
 });
 
 $('.btn-close').on('click', function () {
@@ -146,3 +146,18 @@ $(".form").submit(function () {
     return false;
 });
 
+//плавный скролл
+$(".go_to").on("click", function (event) {
+    event.preventDefault();
+
+    var headerHeight = $('header').height();
+    var id = $(this).attr('href'),
+
+        top = $(id).offset().top;
+
+    //анимируем переход на расстояние - top за 500 мс
+    $('body,html').animate({scrollTop: top - headerHeight}, 500);
+    $('.mobile-menu').fadeOut();
+});
+
+//плавный скролл end
