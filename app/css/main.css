@@ -539,6 +539,8 @@ main {
   .warranty h2 {
     max-width: 920px;
     margin: 0 auto 65px; }
+  .warranty .subtitle {
+    display: none; }
 
 .warranty-wrapper {
   width: 100%;
@@ -754,7 +756,7 @@ main {
       border-radius: 50%;
       background: #0294c9;
       left: 0;
-      top: 0; }
+      top: 8px; }
 
 .owner {
   padding: 130px 0 100px;
@@ -1819,15 +1821,196 @@ footer {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .logo-text {
-    display: none; } }
+    display: none; }
+  .main-img {
+    width: calc(100% - 400px);
+    padding: 0 0 0 30px;
+    margin: 0;
+    min-width: auto; }
+  .callback-box {
+    max-width: 400px;
+    padding: 45px 35px; }
+  main {
+    padding: 25px 0 40px; }
+    main .callback-box {
+      margin: 0 0 -80px; } }
 
-/* Medium Devices, Desktops */
 /* Small Devices, Tablets */
+@media only screen and (max-width: 992px) {
+  input {
+    height: 77px;
+    padding: 0 0 0 50px;
+    font-size: 16px;
+    letter-spacing: 0.64px; }
+  label {
+    margin: 0 0 6px; }
+  .checkbox a {
+    display: block; }
+  .callback-box h3 {
+    font-size: 16px;
+    margin: 0 0 16px;
+    padding: 0 10px; }
+  .input-icon {
+    left: 20px; }
+  .btn {
+    height: 79px;
+    font-size: 20px; }
+  .warranty-video {
+    max-width: 320px;
+    height: 274px; }
+  .btn-play {
+    width: 242px;
+    height: 242px; }
+  .tooltip-box {
+    display: none; }
+  .warranty-content {
+    width: calc(100% - 320px);
+    padding: 0 0 0 20px; }
+    .warranty-content h3 {
+      margin: 0 0 30px; }
+    .warranty-content p {
+      margin: 0;
+      max-width: none; }
+  .warranty .subtitle {
+    display: block;
+    margin: 0 0 25px;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    text-align: left;
+    font-size: 16px;
+    color: rgba(28, 26, 26, 0.85); }
+  .materials-img {
+    max-width: 550px;
+    bottom: -80px; }
+  .materials-box {
+    max-width: 520px; } }
+
 @media only screen and (max-width: 830px) {
   header .whatsapp-links, header .schedule {
-    display: none; } }
+    display: none; }
+  header .wrapper {
+    padding: 79px 0 0; }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .storage-box {
+    width: 50%; }
+  .storage {
+    padding: 55px 0; }
+    .storage h2 {
+      margin: 0 auto 60px; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 33px;
+    line-height: 1.36;
+    letter-spacing: 1.32px;
+    margin: 0 0 22px; }
+  .main-img {
+    padding: 0;
+    margin: 0 auto 23px;
+    width: 100%;
+    max-width: 323px; }
+  .callback-box {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 auto;
+    background: transparent;
+    padding: 0; }
+    .callback-box:before {
+      display: none; }
+    .callback-box .form {
+      padding: 45px 14px 52px;
+      background: #fff;
+      border-radius: 10px;
+      position: relative; }
+      .callback-box .form:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: calc(100% - 15px);
+        height: calc(100% - 15px);
+        border: solid 1px #1a60c9;
+        opacity: 0.09; }
+  .bonuses-order {
+    margin: 12px 0 0; }
+  .bonuses-order-item {
+    margin: 0 0 10px;
+    border-radius: 8px;
+    background: #fff;
+    padding: 12px 15px 25px;
+    font-size: 16px;
+    -webkit-box-shadow: inset 1px 1.7px 13px 0 rgba(0, 0, 0, 0.04);
+            box-shadow: inset 1px 1.7px 13px 0 rgba(0, 0, 0, 0.04); }
+    .bonuses-order-item span {
+      display: block; }
+  .bonuses-order-item__text {
+    padding: 0 0 0 10px; }
+  .main-content p, .main-content span {
+    font-size: 15px; }
+  main .row-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  main .callback-box {
+    margin: 0 auto; }
+  h2 {
+    font-size: 33px;
+    line-height: 1.36;
+    letter-spacing: 1.32px; }
+  .warranty {
+    padding: 50px 0 110px; }
+    .warranty h2 {
+      text-align: left;
+      margin: 0 0 27px; }
+  .warranty-wrapper {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: transparent; }
+  .warranty-content {
+    padding: 0;
+    width: 100%;
+    margin: 44px 0 0; }
+  .materials-box {
+    max-width: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 42px 32px 52px; }
+    .materials-box h3 {
+      font-size: 20px;
+      margin: 0 0 29px; }
+  .materials-img {
+    position: relative;
+    max-width: 317px;
+    bottom: 0;
+    margin: -50px auto -30px; }
+  .materials {
+    padding: 0 0 48px;
+    overflow: visible; }
+  .img-lupe {
+    max-width: 73px;
+    right: 0;
+    top: 40px; } }
+
 @media only screen and (max-width: 576px) {
   header {
     padding: 10px 0; }
@@ -1843,37 +2026,20 @@ footer {
     border-radius: 50%;
     padding: 12px;
     fill: #fff; }
-  .btn-burger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+  .list-dots li {
+    padding: 0; }
+    .list-dots li:before {
+      display: none; }
   .wrapper {
-    padding: 61px 0 0; } }
+    padding: 61px 0 0; }
+  .storage-box {
+    width: 100%; }
+  .storage-box__img {
+    margin: 0 auto 24px; } }
 
 @media only screen and (max-width: 480px) {
   /**/ }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
   /**/ }

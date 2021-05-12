@@ -3,33 +3,231 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width: 1200px)
   .logo-text
     display: none
 
+  .main-img
+    width: calc(100% - 400px)
+    padding: 0 0 0 30px
+    margin: 0
+    min-width: auto
 
-/* Medium Devices, Desktops */
-//@media only screen and (max-width : 992px)
-//	.schedule
-//    display: none
+
+  .callback-box
+    max-width: 400px
+    padding: 45px 35px
+
+  main
+    padding: 25px 0 40px
+    .callback-box
+      margin: 0 0 -80px
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 830px)
-	header
+@media only screen and (max-width: 992px)
+  input
+    height: 77px
+    padding: 0 0 0 50px
+    font-size: 16px
+    letter-spacing: 0.64px
+
+  label
+    margin: 0 0 6px
+
+  .checkbox
+    a
+      display: block
+
+  .callback-box
+    h3
+      font-size: 16px
+      margin: 0 0 16px
+      padding: 0 10px
+
+  .input-icon
+    left: 20px
+
+  .btn
+    height: 79px
+    font-size: 20px
+
+  .warranty-video
+    max-width: 320px
+    height: 274px
+
+  .btn-play
+    width: 242px
+    height: 242px
+
+  .tooltip-box
+    display: none
+
+  .warranty-content
+    width: calc(100% - 320px)
+    padding: 0 0 0 20px
+    h3
+      margin: 0 0 30px
+    p
+      margin: 0
+      max-width: none
+
+  .warranty
+    .subtitle
+      display: block
+      margin: 0 0 25px
+      line-height: 1.5
+      letter-spacing: 0.64px
+      text-align: left
+      font-size: 16px
+      color: rgba(28, 26, 26, 0.85)
+
+  .materials-img
+    max-width: 550px
+    bottom: -80px
+
+  .materials-box
+    max-width: 520px
+
+@media only screen and (max-width: 830px)
+  header
     .whatsapp-links, .schedule
       display: none
 
-  .wrapper
-    padding: 79px 0 0
+    .wrapper
+      padding: 79px 0 0
 
+  .btn-burger
+    display: flex
+
+  .storage-box
+    width: 50%
+
+  .storage
+    padding: 55px 0
+    h2
+      margin: 0 auto 60px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 576px)
+@media only screen and (max-width: 768px)
+  h1
+    font-size: 33px
+    line-height: 1.36
+    letter-spacing: 1.32px
+    margin: 0 0 22px
+
+  .main-img
+    padding: 0
+    margin: 0 auto 23px
+    width: 100%
+    max-width: 323px
+
+  .callback-box
+    order: 1
+    margin: 0 auto
+    background: transparent
+    padding: 0
+    &:before
+      display: none
+    .form
+      padding: 45px 14px 52px
+      background: #fff
+      border-radius: 10px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        width: calc(100% - 15px)
+        height: calc(100% - 15px)
+        border: solid 1px #1a60c9
+        opacity: 0.09
+
+  .bonuses-order
+    margin: 12px 0 0
+
+  .bonuses-order-item
+    margin: 0 0 10px
+    border-radius: 8px
+    background: #fff
+    padding: 12px 15px 25px
+    font-size: 16px
+    box-shadow: inset 1px 1.7px 13px 0 rgba(0, 0, 0, 0.04)
+    span
+      display: block
+
+
+  .bonuses-order-item__text
+    padding: 0 0 0 10px
+
+  .main-content
+    p, span
+      font-size: 15px
+
+  main
+    .row-wrapper
+      flex-direction: column
+      align-items: center
+    .callback-box
+      margin: 0 auto
+
+  h2
+    font-size: 33px
+    line-height: 1.36
+    letter-spacing: 1.32px
+
+  .warranty
+    padding: 50px 0 110px
+    h2
+      text-align: left
+      margin: 0 0 27px
+
+  .warranty-wrapper
+    padding: 0
+    flex-direction: column
+    align-items: center
+    box-shadow: none
+    background: transparent
+
+  .warranty-content
+    padding: 0
+    width: 100%
+    margin: 44px 0 0
+
+  .materials-box
+    max-width: none
+    order: 1
+    padding: 42px 32px 52px
+    h3
+      font-size: 20px
+      margin: 0 0 29px
+
+  .materials-img
+    position: relative
+    max-width: 317px
+    bottom: 0
+    margin: -50px auto -30px
+
+  .materials
+    padding: 0 0 48px
+    overflow: visible
+
+  .img-lupe
+    max-width: 73px
+    right: 0
+    top: 40px
+
+
+
+@media only screen and (max-width: 576px)
   header
     padding: 10px 0
+
     .header-box__text
       display: none
+
     .logo
       max-width: 123px
 
@@ -42,44 +240,26 @@
     padding: 12px
     fill: #fff
 
-  .btn-burger
-    display: flex
+  .list-dots
+    li
+      padding: 0
+      &:before
+        display: none
 
   .wrapper
     padding: 61px 0 0
 
-@media only screen and (max-width : 480px)
-	/**/
+  .storage-box
+    width: 100%
+
+  .storage-box__img
+    margin: 0 auto 24px
+
+@media only screen and (max-width: 480px)
+  /**/
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (max-width: 320px)
+  /**/
 
