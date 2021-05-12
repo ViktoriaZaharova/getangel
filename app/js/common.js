@@ -20,6 +20,20 @@ function accordeon() {
 accordeon();
 
 $(window).on('load resize', function() {
+    if ($(window).width() < 768) {
+        $('.additionally-slider:not(.slick-initialized)').slick({
+            dots: true,
+            speed: 500,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
+        });
+    } else {
+        $(".additionally-slider.slick-initialized").slick("unslick");
+    }
     if ($(window).width() < 576) {
         $('.product-slider:not(.slick-initialized)').slick({
             dots: true,

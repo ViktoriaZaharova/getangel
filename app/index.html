@@ -27,7 +27,60 @@
 <body>
 
 <div class="wrapper">
-  <div class="mobile-menu"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu__head">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+      <div class="btn-close"></div>
+    </div>
+    
+    <div class="mobile-menu__body">
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#advantages" class="go_to">Преимущества</a></li>
+        <li><a href="#reviews" class="go_to">Отзывы </a></li>
+        <li><a href="#services" class="go_to">Наши услуги</a></li>
+        <li><a href="#question" class="go_to">FAQ</a></li>
+        <li><a href="#certificates" class="go_to">Сертификаты</a></li>
+        <li><a href="#additionally" class="go_to">Дополнительные услуги</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu__footer">
+      <ul class="list-message">
+        <li>
+          <a href="whatsapp://send?phone=+79852268575" class="message-item whatsapp-item">
+            <span class="message-item__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
+            <span class="message-item__text">Написать в WhatsApp</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+74999384080" class="message-item phone-item">
+            <span class="message-item__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+            <span class="message-item__text">Позвонить нам</span>
+          </a>
+        </li>
+        <li>
+          <a href="#modal__call" class="message-item open_modal call-item">
+            <span class="message-item__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#call"></use></svg></span>
+            <span class="message-item__text">Заказать обратный звонок</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="schedule header-box">
+        <div class="header-box__icon">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#clock"></use>
+          </svg>
+        </div>
+        <div class="header-box__text">
+          <p>10:00 - 21:00</p><span>без выходных</span>
+        </div>
+      </div>
+
+      <span class="logo-text">Производство роллетных шкафов с 2007г. Монтаж по Москве и МО</span>
+    </div>
+  </div>
 
 
   <header>
@@ -174,7 +227,7 @@
     </div>
   </section>
 
-  <div class="materials">
+  <div class="materials" id="advantages">
     <div class="container">
       <div class="materials-box">
         <h3>В шкафах премиального качества мы используем:</h3>
@@ -365,7 +418,7 @@
     </div>
   </section>
 
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="container">
       <h2><span class="color-accent">Отзывы</span> наших клиентов</h2>
       <div class="subtitle">Смотрите видеоотзывы наших клиентов</div>
@@ -700,7 +753,7 @@
     </div>
   </div>
 
-  <section class="question">
+  <section class="question" id="question">
     <div class="container">
       <h2>Вопросы пользователей</h2>
       <div class="subtitle">Самые часто задаваемые вопросы и ответы на них</div>
@@ -878,7 +931,7 @@
     </div>
   </section>
 
-  <section class="certificates">
+  <section class="certificates" id="certificates">
     <div class="container">
       <h2>Наши шкафы соответствуют
         <span class="color-accent">противопожарным требованиям</span></h2>
@@ -929,7 +982,7 @@
     </div>
   </section>
 
-  <section class="additionally">
+  <section class="additionally" id="additionally">
     <div class="container">
       <h2><span class="color-accent">Дополнительно</span> можно заказать</h2>
       <div class="subtitle">Закажите дополнительно к роллетному шкафу</div>
@@ -1038,12 +1091,12 @@
       </div>
 
       <div class="footer-box">
-        <div class="contacts-item">
-          <div class="contacts-item__icon">
+        <div class="contacts-item contacts-item-tel">
+          <a href="tel:+74999384080" class="contacts-item__icon">
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#phone"></use>
             </svg>
-          </div>
+          </a>
           <a href="tel:+74999384080" class="phone">8 (499) 938-40-80</a>
           <a href="#modal__call" class="links-blue open_modal link-callback text-decoration">обратный звонок</a>
         </div>
@@ -1073,6 +1126,14 @@
         <p>Тогда нажмите на кнопку
           "Обратный звонок"</p>
         <a href="#" class="btn btn-yellow">Обратный звонок</a>
+      </div>
+
+      <div class="d-mobile">
+        <ul class="list-document">
+          <li>ИП Кузьменко Г.Г.</li>
+          <li>ОГРНИП: 311504719400030</li>
+          <li><a href="#" class="text-decoration">Политика конфиденциальности</a></li>
+        </ul>
       </div>
     </div>
   </footer>

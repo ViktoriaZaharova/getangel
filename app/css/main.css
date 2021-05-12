@@ -1628,6 +1628,8 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .additionally-box__img img {
+      max-height: 100%; }
 
 .additionally-box__price {
   margin: 22px 0 0; }
@@ -1638,7 +1640,7 @@ footer {
   background: #1a1b1c;
   color: #fff;
   position: relative;
-  padding: 75px 0 98px; }
+  padding: 75px 0 68px; }
   footer:before {
     content: '';
     position: absolute;
@@ -1719,7 +1721,8 @@ footer {
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  margin: 0 0 39px; }
 
 .footer-box-call h3 {
   font-size: 20px; }
@@ -1833,7 +1836,7 @@ footer {
     height: 2px;
     background: #fff; }
 
-.title-mobile {
+.title-mobile, .d-mobile {
   display: none;
   width: 100%; }
 
@@ -1866,6 +1869,156 @@ footer {
   overflow-x: auto;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
+
+.mobile-menu {
+  position: fixed;
+  z-index: 5;
+  max-width: 375px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+  top: 0;
+  left: 0;
+  display: none; }
+  .mobile-menu__head {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px 25px; }
+  .mobile-menu__body {
+    width: 100%;
+    margin: 4px 0 9px; }
+  .mobile-menu__footer {
+    padding: 24px 25px 30px;
+    border-top: solid 1px rgba(16, 15, 15, 0.17); }
+  .mobile-menu .logo {
+    max-width: 142px; }
+  .mobile-menu .logo-text {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    color: rgba(31, 29, 29, 0.41);
+    line-height: 1.43;
+    letter-spacing: 0.56px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    padding: 0;
+    margin: 19px 0 0; }
+  .mobile-menu .schedule {
+    margin: 0; }
+
+.list-message {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-message li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .list-message li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center;
+      color: rgba(21, 20, 20, 0.79);
+      line-height: 1.5;
+      letter-spacing: 0.64px;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0 0 35px; }
+      .list-message li a:hover {
+        color: #0294c9; }
+
+.message-item__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+  margin: 0 auto 15px;
+  padding: 13px;
+  fill: #fff;
+  background: #000; }
+
+.call-item .message-item__icon {
+  background: #0294c9; }
+
+.whatsapp-item .message-item__icon {
+  background: #1bd741; }
+
+.phone-item .message-item__icon {
+  padding: 19px; }
+
+.menu {
+  width: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  font-size: 16px; }
+  .menu li a {
+    width: 100%;
+    padding: 12px 10px;
+    text-align: center;
+    color: #151414; }
+    .menu li a:hover {
+      color: #151414;
+      background: rgba(2, 148, 201, 0.08); }
+  .menu li .active {
+    color: #151414;
+    background: rgba(2, 148, 201, 0.08); }
+
+.btn-close {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer; }
+  .btn-close:before, .btn-close:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.59);
+    width: 2px;
+    height: 100%; }
+  .btn-close:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .btn-close:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -2103,7 +2256,9 @@ footer {
   .question {
     padding: 0; }
   .panel_heading {
-    padding: 20px 10px; } }
+    padding: 20px 10px; }
+  .additionally-box {
+    padding: 46px 25px 34px; } }
 
 @media only screen and (max-width: 830px) {
   header .whatsapp-links, header .schedule {
@@ -2310,7 +2465,24 @@ footer {
         -ms-flex-pack: start;
             justify-content: flex-start; }
     .panel_heading .block_title h3 {
-      max-width: none; } }
+      max-width: none; }
+  .additionally-box {
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .additionally-box__img {
+    margin: 0 auto;
+    height: 145px; }
+  .additionally {
+    padding: 0 0 50px; }
+    .additionally .subtitle {
+      display: none; }
+    .additionally h2 {
+      margin: 0 auto 20px; }
+  .callback-section {
+    padding: 0 0 46px; } }
 
 @media only screen and (max-width: 576px) {
   header {
@@ -2319,7 +2491,7 @@ footer {
       display: none; }
     header .logo {
       max-width: 123px; }
-  .header-box__icon {
+  header .header-box__icon {
     margin: 0;
     background: #000;
     width: 41px;
@@ -2483,7 +2655,52 @@ footer {
     display: -ms-flexbox;
     display: flex;
     margin: 18px auto 0;
-    max-width: 320px; } }
+    max-width: 320px; }
+  .list-document {
+    display: none; }
+  .d-mobile {
+    display: block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+    .d-mobile .list-document {
+      display: block;
+      margin: 0; }
+  footer {
+    padding: 53px 0 54px; }
+    footer .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    footer .phone, footer .open_modal {
+      display: none; }
+  .footer-box {
+    width: 100%; }
+    .footer-box:nth-child(2) {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+  .contacts-item {
+    margin: 0 0 34px;
+    padding: 0 0 0 45px; }
+  .contacts-item-tel {
+    position: absolute;
+    margin: 0;
+    right: 25px;
+    left: auto;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 18px; }
+    .contacts-item-tel .contacts-item__icon {
+      position: relative;
+      fill: #000; } }
 
 @media only screen and (max-width: 480px) {
   .owner .title-mobile {

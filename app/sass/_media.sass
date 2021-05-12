@@ -293,6 +293,9 @@
   .panel_heading
     padding: 20px 10px
 
+  .additionally-box
+    padding: 46px 25px 34px
+
 @media only screen and (max-width: 830px)
   header
     .whatsapp-links, .schedule
@@ -517,6 +520,27 @@
     h3
       max-width: none
 
+  .additionally-box
+    margin: 0 auto
+    box-sizing: border-box
+    box-shadow: none
+
+  .additionally-box__img
+    margin: 0 auto
+    height: 145px
+
+  .additionally
+    padding: 0 0 50px
+    .subtitle
+      display: none
+    h2
+      margin: 0 auto 20px
+
+
+
+  .callback-section
+    padding: 0 0 46px
+
 @media only screen and (max-width: 576px)
   header
     padding: 10px 0
@@ -527,7 +551,7 @@
     .logo
       max-width: 123px
 
-  .header-box__icon
+  header .header-box__icon
     margin: 0
     background: #000
     width: 41px
@@ -723,6 +747,50 @@
     display: flex
     margin: 18px auto 0
     max-width: 320px
+
+  .list-document
+    display: none
+
+  .d-mobile
+    display: block
+    order: 1
+    .list-document
+      display: block
+      margin: 0
+
+  footer
+    padding: 53px 0 54px
+    .container
+      flex-direction: column
+      align-items: flex-start
+    .phone, .open_modal
+      display: none
+
+
+
+  .footer-box
+    width: 100%
+    &:nth-child(2)
+      order: 1
+
+  .contacts-item
+    margin: 0 0 34px
+    padding: 0 0 0 45px
+
+  .contacts-item-tel
+    position: absolute
+    margin: 0
+    right: 25px
+    left: auto
+    top: 0
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background: #fff
+    padding: 18px
+    .contacts-item__icon
+      position: relative
+      fill: #000
 
 @media only screen and (max-width: 480px)
   .owner
