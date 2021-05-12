@@ -19,11 +19,30 @@ function accordeon() {
 
 accordeon();
 
+
+$(window).on('load resize', function() {
+    if ($(window).width() < 576) {
+        $('.product-slider:not(.slick-initialized)').slick({
+            dots: true,
+            infinite: true,
+            speed: 100,
+            slidesToShow: 1,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-right"></use></svg></button>'
+        });
+    } else {
+        $(".product-slider.slick-initialized").slick("unslick");
+    }
+});
+
 // tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
     $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+
+    $(".product-slider").slick('reinit');
 });
 
 // модальные окна (несколько)
@@ -91,3 +110,4 @@ $(".form").submit(function () {
     });
     return false;
 });
+

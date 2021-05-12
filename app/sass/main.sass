@@ -973,6 +973,7 @@ main
   line-height: 1.76
   letter-spacing: 0.68px
   color: #211f1f
+  width: 100%
   li
     padding: 13px 46px
     min-height: 69px
@@ -989,6 +990,7 @@ main
   font-weight: 300
   letter-spacing: 0.68px
   color: #161818
+  width: 100%
   strong
     line-height: 1
     letter-spacing: 1.2px
@@ -1089,6 +1091,10 @@ main
       letter-spacing: 1.8px
       font-size: 45px
       font-weight: bold
+  .bonuses-order
+    display: none
+  .container
+    align-items: flex-start
 
 .callback-section-wrapper
   width: calc(100% - 566px)
@@ -1189,12 +1195,17 @@ main
 
 .tabs__content
   padding: 67px 45px 78px
+  display: none
+
+.tabs__content.active
+  display: block
 
 .product-card
   box-shadow: 4.6px 6.6px 33.1px 4.9px rgba(0, 0, 0, 0.03)
   background-color: #ffffff
   border-radius: 10px
   width: 49%
+  overflow: hidden
   &__img
     width: 100%
     display: flex
@@ -1567,6 +1578,9 @@ footer
     height: 2px
     background: #fff
 
+.title-mobile
+  display: none
+  width: 100%
 
 @import "modal"
 @import "media"

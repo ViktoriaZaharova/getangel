@@ -1131,7 +1131,8 @@ main {
   font-weight: 300;
   line-height: 1.76;
   letter-spacing: 0.68px;
-  color: #211f1f; }
+  color: #211f1f;
+  width: 100%; }
   .list-characteristics li {
     padding: 13px 46px;
     min-height: 69px;
@@ -1151,7 +1152,8 @@ main {
   font-size: 17px;
   font-weight: 300;
   letter-spacing: 0.68px;
-  color: #161818; }
+  color: #161818;
+  width: 100%; }
   .total strong {
     line-height: 1;
     letter-spacing: 1.2px;
@@ -1256,6 +1258,12 @@ main {
       letter-spacing: 1.8px;
       font-size: 45px;
       font-weight: bold; }
+  .callback-section .bonuses-order {
+    display: none; }
+  .callback-section .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
 
 .callback-section-wrapper {
   width: calc(100% - 566px);
@@ -1378,14 +1386,19 @@ main {
   margin: 0 20px 0 0; }
 
 .tabs__content {
-  padding: 67px 45px 78px; }
+  padding: 67px 45px 78px;
+  display: none; }
+
+.tabs__content.active {
+  display: block; }
 
 .product-card {
   -webkit-box-shadow: 4.6px 6.6px 33.1px 4.9px rgba(0, 0, 0, 0.03);
           box-shadow: 4.6px 6.6px 33.1px 4.9px rgba(0, 0, 0, 0.03);
   background-color: #ffffff;
   border-radius: 10px;
-  width: 49%; }
+  width: 49%;
+  overflow: hidden; }
   .product-card__img {
     width: 100%;
     display: -webkit-box;
@@ -1817,6 +1830,10 @@ footer {
     height: 2px;
     background: #fff; }
 
+.title-mobile {
+  display: none;
+  width: 100%; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1833,9 +1850,48 @@ footer {
   main {
     padding: 25px 0 40px; }
     main .callback-box {
-      margin: 0 0 -80px; } }
+      margin: 0 0 -80px; }
+  .owner-box {
+    max-width: 510px;
+    right: -130px; }
+  .owner-content {
+    max-width: 750px;
+    padding: 30px 120px 30px 30px; }
+  .owner-position {
+    left: -40px; }
+  .year-work-images {
+    max-width: 450px; }
+  .year-work-images__item1 {
+    width: 100%;
+    height: 300px; }
+  .year-work-content {
+    margin: 46px 0 77px 40px;
+    max-width: 450px; }
+    .year-work-content .btn {
+      max-width: 330px; }
+    .year-work-content .box-text p {
+      max-width: 200px;
+      letter-spacing: 0.48px;
+      line-height: 2.17;
+      font-size: 14px; }
+    .year-work-content h2 {
+      font-size: 200px;
+      margin: 0 0 -10px -40px; }
+  .reviews-box__video {
+    max-width: 500px; }
+  .reviews-box__content {
+    width: calc(100% - 500px); }
+    .reviews-box__content .btn {
+      margin: 13px auto 0; }
+  .callback-section-wrapper {
+    width: calc(100% - 400px); }
+  .present-box__icon {
+    left: -10px; }
+  .present-box {
+    padding: 40px 20px 40px 190px; }
+  .present-box:last-child .present-box__icon {
+    left: -10px; } }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 992px) {
   input {
     height: 77px;
@@ -1883,7 +1939,116 @@ footer {
     max-width: 550px;
     bottom: -80px; }
   .materials-box {
-    max-width: 520px; } }
+    max-width: 520px; }
+  .owner-content {
+    max-width: none;
+    width: 100%;
+    padding: 34px 15px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+    .owner-content br {
+      display: none; }
+    .owner-content h2 {
+      display: none; }
+  .title-mobile {
+    display: block; }
+  .owner-box {
+    bottom: auto;
+    top: 0;
+    max-width: 300px;
+    margin: 0 0 0 auto;
+    right: 0;
+    position: relative; }
+  .owner {
+    padding: 60px 0 40px; }
+    .owner .title-mobile {
+      width: calc(100% - 200px);
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 0 0 0 20px; }
+    .owner h2 {
+      color: #fff;
+      text-align: left;
+      margin: 0;
+      font-style: italic; }
+  .owner-name {
+    padding: 17px 37px 17px 48px;
+    font-size: 16px;
+    max-width: 268px;
+    left: -70px; }
+  .owner-position {
+    padding: 17px 39px 17px 73px;
+    font-size: 16px;
+    max-width: 269px;
+    bottom: -30px;
+    left: 0; }
+    .owner-position:after {
+      top: 25px;
+      left: 31px; }
+  .year-work-content {
+    margin: 46px auto 77px;
+    max-width: 350px; }
+  .year-work-images {
+    margin: 0 auto; }
+  .year-work {
+    padding: 0 0 70px; }
+    .year-work .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .reviews-box__content {
+    width: 100%; }
+    .reviews-box__content .btn {
+      margin: 0 auto;
+      max-width: 320px; }
+  .reviews-box {
+    padding: 0 0 10px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    background: transparent; }
+  .reviews-slider .slide {
+    padding: 0; }
+  .reviews-slider .slick-arrow {
+    top: 100px;
+    -webkit-transform: none;
+            transform: none; }
+  .reviews-slider:before, .reviews-slider:after {
+    display: none; }
+  .reviews-box__video {
+    max-width: 400px;
+    margin: 0 auto; }
+  .reviews {
+    padding: 24px 0 73px; }
+  .list-characteristics {
+    font-size: 16px; }
+    .list-characteristics li {
+      padding: 14px 30px 20px; }
+  body {
+    background: #fff; }
+  .total {
+    padding: 14px 30px; }
+  .materials-video-box {
+    max-width: none;
+    height: 400px; }
+  .materials-video {
+    padding: 0; }
+  .tabs__caption li {
+    padding: 12px;
+    font-size: 16px; }
+  .tabs__content {
+    padding: 30px 0 0; }
+  .tabs {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    overflow: visible; } }
 
 @media only screen and (max-width: 830px) {
   header .whatsapp-links, header .schedule {
@@ -1899,7 +2064,30 @@ footer {
   .storage {
     padding: 55px 0; }
     .storage h2 {
-      margin: 0 auto 60px; } }
+      margin: 0 auto 60px; }
+  .callback-section-wrapper {
+    padding: 0;
+    display: none; }
+  .callback-section .bonuses-order {
+    display: block; }
+  .callback-section {
+    padding: 24px 0 45px; }
+    .callback-section .callback-box {
+      max-width: none; }
+  .product-card__body {
+    padding: 20px 20px 30px; }
+  .product-card .btn {
+    margin: 22px 0 0;
+    max-width: 280px;
+    height: 77px; }
+  .product-card p {
+    font-size: 16px; }
+  .list-characteristic {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.64px; }
+  .product-card__img {
+    height: 280px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 768px) {
@@ -1919,7 +2107,9 @@ footer {
             order: 1;
     margin: 0 auto;
     background: transparent;
-    padding: 0; }
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
     .callback-box:before {
       display: none; }
     .callback-box .form {
@@ -2009,7 +2199,29 @@ footer {
   .img-lupe {
     max-width: 73px;
     right: 0;
-    top: 40px; } }
+    top: 40px; }
+  .list-address {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; }
+  .residential-complexes {
+    padding: 40px 0; }
+    .residential-complexes h2 {
+      font-size: 20px;
+      margin: 0 0 26px; }
+  .subtitle {
+    font-size: 16px; }
+  .residential-complexes-wrapper {
+    margin: 12px 0 0; }
+  .address-clients {
+    padding: 0 0 49px; }
+    .address-clients:before {
+      height: 695px; }
+    .address-clients h2 {
+      margin: 0 0 42px;
+      text-align: left; }
+  .map-wrapper {
+    height: 282px; } }
 
 @media only screen and (max-width: 576px) {
   header {
@@ -2035,11 +2247,96 @@ footer {
   .storage-box {
     width: 100%; }
   .storage-box__img {
-    margin: 0 auto 24px; } }
+    margin: 0 auto 24px; }
+  .owner-box {
+    max-width: 233px;
+    margin: 0 -15px 59px auto; }
+  .owner-position {
+    min-width: 268px;
+    bottom: -64px;
+    left: auto;
+    right: 10px; }
+  .owner-name {
+    bottom: 0; }
+  .residential-complexes-wrapper {
+    padding: 42px 27px 64px 37px;
+    position: relative; }
+    .residential-complexes-wrapper:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%); }
+  .list-address {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .scroll-text {
+    display: none; }
+  .scroll-block {
+    height: 303px;
+    padding: 0 0 90px;
+    position: relative; }
+  .year-work-images {
+    max-width: 305px; }
+  .year-work-images__item {
+    height: 160px; }
+  .year-work-images__item1 {
+    height: 173px;
+    margin: -18px 0 -40px -22px;
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg); }
+  .year-work-content {
+    margin: 46px 0 0; }
+    .year-work-content h2 {
+      font-size: 163px;
+      line-height: 1;
+      letter-spacing: 3.28px;
+      margin: 0 0 -10px -20px; }
+    .year-work-content .box-text p {
+      margin: 0 0 0 17px;
+      font-size: 12px;
+      max-width: 150px; }
+    .year-work-content .btn {
+      height: 100px; }
+  .reviews h2 {
+    text-align: left;
+    margin: 0;
+    width: 100%; }
+  .subtitle {
+    margin: 18px 0 19px;
+    text-align: left; }
+  .reviews-box__video {
+    max-width: 320px;
+    height: 242px; }
+    .reviews-box__video .btn-play {
+      width: 212px;
+      height: 212px; }
+  .materials-video h2 {
+    text-align: left; }
+  .materials-video .subtitle {
+    margin: 22px 0 19px; }
+  .materials-video-box {
+    height: 278px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px; } }
 
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .owner .title-mobile {
+    width: 100%;
+    max-width: 205px; }
+    .owner .title-mobile h2 {
+      font-size: 32.5px; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 360px) {
+  .owner .title-mobile h2 {
+    font-size: 25px; }
+  .reviews-box__content .btn {
+    max-width: 290px; }
+  .reviews-box__video {
+    max-width: 290px; } }

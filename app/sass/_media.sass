@@ -23,8 +23,60 @@
     .callback-box
       margin: 0 0 -80px
 
+  .owner-box
+    max-width: 510px
+    right: -130px
 
-/* Small Devices, Tablets */
+  .owner-content
+    max-width: 750px
+    padding: 30px 120px 30px 30px
+
+  .owner-position
+    left: -40px
+
+  .year-work-images
+    max-width: 450px
+
+  .year-work-images__item1
+    width: 100%
+    height: 300px
+
+  .year-work-content
+    margin: 46px 0 77px 40px
+    max-width: 450px
+    .btn
+      max-width: 330px
+    .box-text
+      p
+        max-width: 200px
+        letter-spacing: 0.48px
+        line-height: 2.17
+        font-size: 14px
+
+    h2
+      font-size: 200px
+      margin: 0 0 -10px -40px
+
+  .reviews-box__video
+    max-width: 500px
+
+  .reviews-box__content
+    width: calc(100% - 500px)
+    .btn
+      margin: 13px auto 0
+
+  .callback-section-wrapper
+    width: calc(100% - 400px)
+
+  .present-box__icon
+    left: -10px
+
+  .present-box
+    padding: 40px 20px 40px 190px
+
+  .present-box:last-child .present-box__icon
+    left: -10px
+
 @media only screen and (max-width: 992px)
   input
     height: 77px
@@ -89,6 +141,133 @@
   .materials-box
     max-width: 520px
 
+  .owner-content
+    max-width: none
+    width: 100%
+    padding: 34px 15px
+    order: 1
+    br
+      display: none
+    h2
+      display: none
+
+  .title-mobile
+    display: block
+
+  .owner-box
+    bottom: auto
+    top: 0
+    max-width: 300px
+    margin: 0 0 0 auto
+    right: 0
+    position: relative
+
+  .owner
+    padding: 60px 0 40px
+    .title-mobile
+      width: calc(100% - 200px)
+      position: absolute
+      left: 0
+      top: 0
+      padding: 0 0 0 20px
+    h2
+      color: #fff
+      text-align: left
+      margin: 0
+      font-style: italic
+
+
+  .owner-name
+    padding: 17px 37px 17px 48px
+    font-size: 16px
+    max-width: 268px
+    left: -70px
+
+  .owner-position
+    padding: 17px 39px 17px 73px
+    font-size: 16px
+    max-width: 269px
+    bottom: -30px
+    left: 0
+    &:after
+      top: 25px
+      left: 31px
+
+  .year-work-content
+    margin: 46px auto 77px
+    max-width: 350px
+
+  .year-work-images
+    margin: 0 auto
+
+  .year-work
+    padding: 0 0 70px
+    .container
+      flex-direction: column
+      align-items: center
+
+  .reviews-box__content
+    width: 100%
+    .btn
+      margin: 0 auto
+      max-width: 320px
+
+  .reviews-box
+    padding: 0 0 10px
+    box-shadow: none
+    border-radius: 0
+    background: transparent
+
+  .reviews-slider
+    .slide
+      padding: 0
+    .slick-arrow
+      top: 100px
+      transform: none
+
+  .reviews-slider:before, .reviews-slider:after
+    display: none
+
+  .reviews-box__video
+    max-width: 400px
+    margin: 0 auto
+
+  .reviews
+    padding: 24px 0 73px
+
+  .list-characteristics
+    font-size: 16px
+    li
+      padding: 14px 30px 20px
+
+  body
+    background: #fff
+
+  .total
+    padding: 14px 30px
+
+  .materials-video-box
+    max-width: none
+    height: 400px
+
+  .materials-video
+    padding: 0
+
+  .tabs__caption
+    li
+      padding: 12px
+      font-size: 16px
+
+  .tabs__content
+    padding: 30px 0 0
+
+  .tabs
+    box-shadow: none
+    border-radius: 0
+    overflow: visible
+
+
+
 @media only screen and (max-width: 830px)
   header
     .whatsapp-links, .schedule
@@ -107,6 +286,37 @@
     padding: 55px 0
     h2
       margin: 0 auto 60px
+
+  .callback-section-wrapper
+    padding: 0
+    display: none
+
+  .callback-section .bonuses-order
+    display: block
+
+  .callback-section
+    padding: 24px 0 45px
+    .callback-box
+      max-width: none
+
+  .product-card__body
+    padding: 20px 20px 30px
+
+  .product-card
+    .btn
+      margin: 22px 0 0
+      max-width: 280px
+      height: 77px
+    p
+      font-size: 16px
+
+  .list-characteristic
+    font-size: 16px
+    line-height: 1.88
+    letter-spacing: 0.64px
+
+  .product-card__img
+    height: 280px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 768px)
@@ -127,6 +337,7 @@
     margin: 0 auto
     background: transparent
     padding: 0
+    box-shadow: none
     &:before
       display: none
     .form
@@ -219,7 +430,31 @@
     right: 0
     top: 40px
 
+  .list-address
+    column-count: 2
 
+  .residential-complexes
+    padding: 40px 0
+    h2
+      font-size: 20px
+      margin: 0 0 26px
+
+  .subtitle
+    font-size: 16px
+
+  .residential-complexes-wrapper
+    margin: 12px 0 0
+
+  .address-clients
+    padding: 0 0 49px
+    &:before
+      height: 695px
+    h2
+      margin: 0 0 42px
+      text-align: left
+
+  .map-wrapper
+    height: 282px
 
 @media only screen and (max-width: 576px)
   header
@@ -255,11 +490,117 @@
   .storage-box__img
     margin: 0 auto 24px
 
-@media only screen and (max-width: 480px)
-  /**/
+  .owner-box
+    max-width: 233px
+    margin: 0 -15px 59px auto
 
+  .owner-position
+    min-width: 268px
+    bottom: -64px
+    left: auto
+    right: 10px
+
+  .owner-name
+    bottom: 0
+
+  .residential-complexes-wrapper
+    padding: 42px 27px 64px 37px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 200px
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+
+
+  .list-address
+    column-count: 1
+
+
+  .scroll-text
+    display: none
+
+  .scroll-block
+    height: 303px
+    padding: 0 0 90px
+    position: relative
+
+  .year-work-images
+    max-width: 305px
+
+  .year-work-images__item
+    height: 160px
+
+  .year-work-images__item1
+    height: 173px
+    margin: -18px 0 -40px -22px
+    transform: rotate(-9deg)
+
+  .year-work-content
+    margin: 46px 0 0
+    h2
+      font-size: 163px
+      line-height: 1
+      letter-spacing: 3.28px
+      margin: 0 0 -10px -20px
+    .box-text
+      p
+        margin: 0 0 0 17px
+        font-size: 12px
+        max-width: 150px
+    .btn
+      height: 100px
+
+  .reviews
+    h2
+      text-align: left
+      margin: 0
+      width: 100%
+
+  .subtitle
+    margin: 18px 0 19px
+    text-align: left
+
+  .reviews-box__video
+    max-width: 320px
+    height: 242px
+    .btn-play
+      width: 212px
+      height: 212px
+      
+  .materials-video
+    h2
+      text-align: left
+    .subtitle
+      margin: 22px 0 19px
+
+  .materials-video-box
+    height: 278px
+    box-shadow: none
+    padding: 10px
+
+@media only screen and (max-width: 480px)
+  .owner
+    .title-mobile
+      width: 100%
+      max-width: 205px
+      h2
+        font-size: 32.5px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (max-width: 360px)
+  .owner
+    .title-mobile
+      h2
+        font-size: 25px
+
+  .reviews-box__content
+    .btn
+      max-width: 290px
+
+  .reviews-box__video
+    max-width: 290px
 
